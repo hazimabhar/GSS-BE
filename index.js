@@ -9,14 +9,6 @@ app.use(express.json());
 
 app.listen(3000, () => console.log(`Server runnnig on port ${3000}`));
 
-const database = {
-  user123: {
-    secret: "", // The OTP secret for TOTP generation
-    userID: "12345",
-    userName: "ALI",
-  },
-};
-
 // 1.if user secret not exist for that user throw error
 // 2. if user exist then create new totp object by calling TOTP function from OTPAuth library
 // 3. generate the token by calling generate() function from the new instance totp created
