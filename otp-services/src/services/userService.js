@@ -10,8 +10,8 @@ exports.createUser = async (userData) => {
 
   return await prisma.user.create({
     data: {
-      firstname: req.body.firstname,
-      lastname: req.body.lastname,
+      firstname: userData.firstname,
+      lastname: userData.lastname,
       secret: secret.base32,
     },
   });
