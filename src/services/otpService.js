@@ -54,7 +54,7 @@ exports.validateOTP = async (id, OTP) => {
   return isOTPValid !== null;
 };
 
-app.get("/user/api/v1/get-all", async (req, res) => {
-  const allUsers = await prisma.user.findMany();
-  res.json(allUsers);
-});
+// app.get("/user/api/v1/get-all", async (req, res) => {
+//   const allUsers = await prisma.user.findMany();
+//   res.json(allUsers);
+// });

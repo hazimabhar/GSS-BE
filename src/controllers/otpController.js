@@ -2,7 +2,7 @@ const otpService = require("../services/otpService");
 
 exports.generateOTP = async (req, res) => {
   try {
-    const otp = await otpService.generateOTP(req.bod.id);
+    const otp = await otpService.generateOTP(req.body.id);
     res.json(otp);
   } catch (error) {
     res.status(500).json({ message: error.message });

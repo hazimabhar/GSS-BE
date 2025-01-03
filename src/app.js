@@ -9,4 +9,4 @@ app.use('/user/api/v1', userRoutes)
 app.use('/otp/api/v1', otpRoutes)
 
 
-module.exports = app
+module.exports = app 
